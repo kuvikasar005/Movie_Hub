@@ -1,0 +1,102 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 18 Jul, 2019, 12:23:49 PM
+    Author     : VIKAS
+*/
+
+body{
+			margin: 0;
+			padding: 0;
+		}
+		.main-container{
+			display: flex;
+		}
+		.main-container > div{
+			height: 100vh;
+			padding: 1rem;
+		}
+		.sidebar-left{
+			flex: 2;
+                        width: 15%;
+			margin-right: 1rem;
+			background-color: #1c1c1c;
+			color: #fff;
+		}
+		.sidebar-right{
+			flex: 6;
+                        background-color: #E4E9FD;
+                       
+                       
+		}
+                
+                .sidebar-right > h1{
+                    text-transform: uppercase;
+                    text-align: center;
+                    font-size: 60px;
+                    font-weight: bold;
+                    margin: 3rem auto;
+                    font-family: 'Montserrat', sans-serif;
+                }
+
+		
+                
+                .sidebar-left{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			color: white;
+			position: relative;
+                        
+		}
+
+		.sidebar-logo{
+			width: 150px;
+			height: 150px;
+			border-radius: 60%;
+			margin-bottom: 2rem;
+		}
+
+		.sidebar-left h4{
+			margin-top: 17rem;
+			margin-bottom: 4rem;
+		}
+
+		.sidebar-left div{
+			margin-top: 2.5rem;
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+			grid-gap: 1.4rem;
+			grid-auto-rows: 40px;
+			height: 40px;
+		}
+
+.social-icons, .social-icons:hover{
+  color: #fff;
+  text-decoration: none;
+  font-size: 22px;
+
+}
+
+.fa-twitter:hover{
+  color: #1da1f2;
+}
+
+.fa-facebook:hover{
+  color: #3c5a9a;
+}
+
+.fa-instagram:hover{
+  color: #e32159;
+}
+
+.fa-envelope:hover{
+  color: #f00;
+}
+
+.fa-play-circle:hover{
+    color: #ff0000;
+}

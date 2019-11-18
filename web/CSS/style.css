@@ -1,0 +1,499 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 26 Jun, 2019, 11:40:38 AM
+    Author     : VIKAS
+*/
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+header, footer{
+	height: 10%;
+	
+	background-color: #1c1c1c;
+	color: #fff;
+	padding: 1% 5%;
+}
+
+header div{
+	display: inline-block;
+}
+
+
+.logo img{
+	width: 100px;
+	height: 70px;
+	border-radius: 100px;
+}
+
+.link-container{
+	float: right;
+}
+
+.link-container a,.link-container button{
+	color: white;
+	text-decoration: none;
+	margin-left: 2rem;
+	font-size: 18px;
+	background: none;
+	border: none;
+}
+
+.link-container a:hover,.link-container button:hover,.link-container:focus{
+	color: #f30067;
+	text-decoration: none;
+	outline: none;
+}
+
+#scroller{
+	padding: 0;
+
+}
+
+.scrolling-posters{
+	width: 100%;
+	height: 85vh;
+    text-align: right;
+}
+
+
+
+.description{
+	width: 30%;
+	text-align: left;
+	margin-right: 2rem;
+	display: inline-block;
+}
+
+#movie-cards{
+	padding: 1% 5%;
+	padding-top: 7%;
+}
+
+#movie-cards h2{
+	margin: 2rem 0;
+	font-weight: bold;
+}
+
+.row{
+	margin-bottom: 3rem;
+}
+
+.card{
+	padding-top: 1rem;
+	padding-bottom: 3rem;
+}
+
+.card img{
+	height: 16rem;
+}
+
+.card-body{
+	position: relative;
+
+}
+
+.card-body a{
+	position: absolute;
+	bottom: -1rem;
+}
+
+
+#login, #signup{
+	text-align: center;
+}
+
+#login h1,#signup h1{
+	font-size: 60px;
+	margin: 5px;
+	text-transform: uppercase;
+	font-weight: 500;
+	text-align: center;
+	margin-top: 1rem;
+}
+#login a, #signup a{
+	text-decoration: none;
+	color: #f30067;
+}
+
+#login,#signup{
+	display: none;
+}
+
+form{
+	width: 40%;
+	text-align: center;
+	margin: 2.5rem auto;
+}
+form input{
+	display: inline-block;
+	margin-bottom: 1.5rem;
+	font-size: 18px;
+	padding: 0.5rem 2rem;
+	border: 2px solid #00d1cd;
+	outline: none;
+	background: none;
+	border-radius: 25px;
+}
+form input:focus{
+	box-shadow: none;
+	outline: none;
+	width: 25rem;
+}
+form input[type="submit"]{
+	border: 2px solid #00faac;
+}
+form input[type="submit"]:hover{
+	width: 10rem;
+	background-color: #00faac;
+}
+
+form input[type="reset"]{
+	border: 2px solid #f30067;
+}
+form input[type="reset"]:hover{
+	width: 10rem;
+	background-color: #f30067;
+}
+
+#login button{
+	background: none;
+	border: none;
+	color: #f30067;
+}
+
+
+/*
+	Social Icons
+*/
+
+footer{
+	position: relative;
+}
+
+footer p{
+	display: inline-block;
+}
+
+footer div{
+	display: inline-block;
+	position: absolute;
+	width: 20%;
+	right: 6rem;
+}
+
+.social-icons, .social-icons:hover{
+  padding: 2% 2%;
+  margin-right: 2rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.fa-twitter:hover{
+  color: #1da1f2;
+}
+
+.fa-facebook:hover{
+  color: #3c5a9a;
+}
+
+.fa-instagram:hover{
+  color: #e32159;
+}
+
+.fa-envelope:hover{
+  color: #f00;
+}
+
+/* Slider Login/Sign
+*/
+
+.container h1 {
+    font-weight: bold;
+    margin: 0;
+}
+
+.overlay-panel p {
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    margin: 20px 0 30px;
+}
+
+.form-container a {
+    color: #333;
+    font-size: 14px;
+    text-decoration: none;
+    margin: 15px 0;
+}
+
+.container button {
+    border-radius: 20px;
+    border: 1px solid #ff4b2b;
+    background-color: #ff4b2b;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+}
+
+.container button:active {
+    transform: scale(0.95);
+}
+
+.container button:focus {
+    outline: none;
+}
+
+.container button.ghost {
+    background-color: transparent;
+    border-color: #ffffff;
+}
+
+.form-container form {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 50px;
+    height: 100%;
+    text-align: center;
+    width: 100%;
+}
+
+.form-container form input {
+    background-color: #eee;
+    border: none;
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 100%;
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    position: relative;
+    overflow: hidden;
+    width: 768px;
+    max-width: 100%;
+    min-height: 480px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    display: none;
+}
+
+.form-container {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    transition: all 0.6s ease-in-out;
+}
+
+.sign-in-container {
+    left: 0;
+    width: 50%;
+    z-index: 2;
+}
+
+.sign-up-container {
+    left: 0;
+    width: 50%;
+    opacity: 0;
+    z-index: 1;
+}
+
+.container.right-panel-active .sign-in-container {
+    transform: translateX(100%);
+}
+
+.container.right-panel-active .sign-up-container {
+    transform: translateX(100%);
+    opacity: 1;
+    z-index: 5;
+    animation: show 0.6s;
+}
+
+@keyframes show {
+    0%,
+    49.99% {
+        opacity: 0;
+        z-index: 1;
+    }
+
+    50%,
+    100% {
+        opacity: 1;
+        z-index: 5;
+    }
+}
+
+.overlay-container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    transition: transform 0.6s ease-in-out;
+    z-index: 100;
+}
+
+.container.right-panel-active .overlay-container {
+    transform: translateX(-100%);
+}
+
+.overlay {
+    background: #ff416c;
+    background: -webkit-linear-gradient(to right, #ff4b2b, #ff416c);
+    background: linear-gradient(to right, #ff4b2b, #ff416c);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+    color: #ffffff;
+    position: relative;
+    left: -100%;
+    height: 100%;
+    width: 200%;
+    transform: translateX(0);
+    transition: transform 0.6s ease-in-out;
+}
+
+.container.right-panel-active .overlay {
+    transform: translateX(50%);
+}
+
+.overlay-panel {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    transform: translateX(0);
+    transition: transform 0.6s ease-in-out;
+}
+
+.overlay-left {
+    padding-left: 0;
+    transform: translateX(-20%);
+}
+
+.container.right-panel-active .overlay-left {
+    transform: translateX(0);
+}
+
+.overlay-right {
+    padding-right: 0;
+    right: 0;
+    transform: translateX(0);
+}
+
+.container.right-panel-active .overlay-right {
+    transform: translateX(20%);
+}
+
+
+/*
+    Style for search
+*/
+
+#search{
+    display: none;
+    margin: 4rem 0;
+}
+
+.search-container{
+        display: flex;
+        text-align: center;
+        width: 75%;
+        margin: auto;
+        box-shadow: -1px 1px 5px 3px #ddd;
+        border-radius: 10px;
+      }
+      .search-container div{
+        display: flex;
+        flex: 1;
+        height: 29.4rem;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .search-container div h1{
+        font-size: 40px;
+      }
+
+      .search-container div p{
+        font-size: 14px;
+        font-weight: 100;
+        line-height: 20px;
+        letter-spacing: 0.5px;
+      }
+
+      .search-container-left{
+        background-color: #ff445e;
+        color: #fff;
+        border-radius: 10px 0 0 10px;
+      }
+
+      .search-container button {
+        border-radius: 20px;
+        border: 1px solid #ff4b2b;
+        background-color: #ff4b2b;
+        color: #ffffff;
+        font-size: 12px;
+        font-weight: bold;
+        padding: 12px 45px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        transition: transform 80ms ease-in;
+      }
+
+      .search-container button:active {
+          transform: scale(0.95);
+      }
+
+      .search-container button:focus {
+          outline: none;
+      }
+
+      .search-container-right form input{
+        margin-bottom: 1.3rem;
+      }
+
+      .search-container-right form span{
+        padding: 0.2rem 3.6rem;
+        color: #1c1c1c;
+      }
+
+      .search-container-right form span input[type="radio"]{
+        position: relative;
+        left: -50px;
+      }
+
+      .search-container-right form span label{
+        position: relative;
+        right: -50px;
+      }
+
+      .search-container-right form input[type="text"] {
+          background-color: #eee;
+          border: none;
+          padding: 12px 15px;
+      }

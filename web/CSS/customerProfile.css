@@ -1,0 +1,176 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 6 Jul, 2019, 1:07:16 PM
+    Author     : VIKAS
+*/
+
+body{
+			margin: 0;
+			padding: 0;
+		}
+		.main-container{
+			display: flex;
+		}
+		.main-container > div{
+
+			height: 100vh;
+			padding: 1rem;
+		}
+		.sidebar-left{
+			flex: 1;
+			margin-right: 7rem;
+			background-color: #1c1c1c;
+			color: #fff;
+		}
+		.sidebar-right{
+			flex: 6;
+			margin-top: 5rem;
+		}
+
+		.sidebar-right > h1{
+                    text-transform: uppercase;
+                    text-align: center;
+                    font-size: 55px;
+                    font-weight: bold;
+                    margin: 3rem auto;
+                    font-family: 'Montserrat', sans-serif;
+                }
+                
+                .sidebar-left{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			color: white;
+			position: relative;
+		}
+
+		.sidebar-logo{
+			width: 150px;
+			height: 150px;
+			border-radius: 60%;
+			margin-bottom: 2rem;
+		}
+
+		.sidebar-left h4{
+			margin-top: 25rem;
+		}
+
+		.sidebar-left div{
+			margin-top: 2rem;
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+			grid-gap: 1.4rem;
+			grid-auto-rows: 40px;
+			height: 40px;
+		}
+
+		.social-icons, .social-icons:hover{
+  color: #fff;
+  text-decoration: none;
+  font-size: 22px;
+
+}
+
+.fa-twitter:hover{
+  color: #1da1f2;
+}
+
+.fa-facebook:hover{
+  color: #3c5a9a;
+}
+
+.fa-instagram:hover{
+  color: #e32159;
+}
+
+.fa-envelope:hover{
+  color: #f00;
+}
+
+.btn-container{
+	width: 400px;
+	padding-bottom: 0.7rem;
+	border-bottom: 3px solid #17a2b8;
+}
+
+.sidebar-right table{
+	margin-top: 7rem;
+	width: 65%;
+	font-size: 18px;
+	font-weight: 500;
+	font-family: 'Nunito Sans', sans-serif;
+	box-shadow: 0 0 3px 2px #eee;
+	border-radius: 10px;
+        background-color: #f9fce1;
+}
+
+.sidebar-right table tr td{
+	padding: 1.5rem;
+}
+
+.sidebar-right table tr td:nth-child(odd){
+	text-align: left;
+	padding-left: 3rem;
+}
+
+.sidebar-right table tr td:nth-child(even){
+	text-align: right;
+	padding-right: 3rem;
+}
+
+
+
+#edit-profile{
+	width: 65%;
+	margin-top: 7rem;
+	font-size: 18px;
+	font-weight: 500;
+	font-family: 'Nunito Sans', sans-serif;
+	box-shadow: 0 0 3px 2px #eee;
+	border-radius: 10px;
+	margin-bottom: 1rem;
+	display: none;
+        background-color: #f9fce1;
+}
+
+#edit-profile form{
+	position: relative;
+	padding-bottom: 1.5rem;
+}
+
+#edit-profile form label{
+	text-align: left;
+	width: 47%;
+	margin-left: 3rem;
+}
+
+#edit-profile form input{
+	margin: 1.5rem;
+	border: none;
+        background: none;
+	outline: none;
+	border-bottom: 1px solid;
+	min-width: 17rem;
+	text-align: right;
+	margin-right: 3rem;
+}
+
+#save-profile-btn{
+	position: relative;
+	left: 37rem;
+}
+
+#edit-note{
+	font-family: 'Nunito Sans', sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	margin-top: 7rem;
+	text-transform: uppercase;
+	display: none;
+}
+
+		

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Movie Hub</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="CSS/style.css">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+  rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+
+    	<!-- Navbar    	-->
+        <header>
+			<div class="logo">
+				<img src="Images/logo.png">
+			</div>
+			<div class="link-container">
+				<br>
+				<a href="index.html">Home</a>
+				<button id="login-btn">Login</button>
+				<button id="search-btn">Search</button>
+			</div>
+	</header>
+
+	<!--	login-->
+	<div class="container" id="container">
+
+          <!-- Sign Up form code goes here -->
+          <div class="form-container sign-up-container">
+            <form action="reguser.jsp" method="post">
+              <h1>Create Account</h1>
+              <input type="text" placeholder="Name" name="nm" required="" /><br>
+              <input type="email" placeholder="Email" name="em" required="" /><br>
+              <input type="password" placeholder="Password" name="pass" required="" /><br>
+              <button type="submit">Sign Up</button>
+            </form>
+          </div>
+          <!-- Sign In form code goes here -->
+          <div class="form-container sign-in-container">
+            <form action="login.jsp" method="post">
+              <h1>Sign in</h1>
+              <input type="email" name="em" placeholder="Email" required="" /><br>
+              <input type="password" name="pass" placeholder="Password" required="" /><br>
+              <a href="forgetpassword.html">Forgot your password?</a><br>
+              <button type="submit">Sign In</button>
+            </form>
+          </div>
+
+          <!-- The overlay code goes here -->
+
+          <div class="overlay-container">
+            <div class="overlay">
+              <div class="overlay-panel overlay-left">
+                <h1>Welcome Back!</h1>
+                <p>
+                  To keep connected with us please login with your personal info
+                </p>
+                <button class="ghost" id="signIn">Sign In</button>
+              </div>
+              <div class="overlay-panel overlay-right">
+                <h1>Hello, Friend!</h1>
+                <p>Enter your personal details and start journey with us</p>
+                <button class="ghost" id="signUp">Sign Up</button>
+              </div>
+            </div>
+          </div>
+
+    </div>
+
+	<!--	Search	-->
+	<section id="search">
+            <div class="search-container">
+                <div class="search-container-left">
+                  <h1>Hello There</h1>
+                  <p>Looking for Something in specific. Find it here in no time.</p>
+                </div>
+                <div class="search-container-right">
+                  <h1>Search Here</h1>
+                  <form action="#" method="get">
+                    <input type="text" name="search-text" placeholder="Movie or Hall Name" required=""><br>
+
+                    <span>
+                      <input type="radio" name="search-group" value="movie" checked=""><label>Movie</label>
+                    </span><br>
+                    <span>
+                      <input type="radio" name="search-group" value="hall"> <label> Halls</label>
+                    </span><br>
+
+                    <button type="submit" id="search-btn">Search</button>
+                  </form>
+                </div>
+            </div>
+        </section>
+
+	<!-- Scrolling Movies-->
+	<section id="scroller">
+		<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img class="scrolling-posters" src="Images/hobbs.jpg" class="d-block w-100" alt="...">
+			</div>
+			<div class="carousel-item">
+				<img class="scrolling-posters" src="Images/xmen.jpg" class="d-block w-100" alt="...">
+			</div>
+			<div class="carousel-item">
+				<img class="scrolling-posters" src="Images/shada.jpg" class="d-block w-100" alt="...">
+			</div>
+		</div>
+		</div>
+	</section>
+
+	<!--	Movie Cards-->
+	<section id="movie-cards">
+		<h2>Latest Movies</h2>
+		<div class="row">
+			<div class="card col-sm-12 col-md-6 col-lg-3 mr-auto" style="width: 18rem;">
+			<img src="Images/hobbs.jpg" class="card-img-top" alt="...">
+			<div class="card-body">
+				<h5 class="card-title">Hobbs And Shaw</h5>
+				<p class="card-text">Hobbs & Shaw is an upcoming 2019 American buddy cop action film directed by David Leitch and written by Chris Morgan.</p>
+				<a href="#" class="btn btn-primary">Book</a>
+			</div>
+			</div>
+		<div class="card col-sm-12 col-md-6 col-lg-3 mr-auto" style="width: 18rem;">
+			<img src="Images/kabir.jpg" class="card-img-top" alt="...">
+			<div class="card-body">
+				<h5 class="card-title">Kabir Singh</h5>
+				<p class="card-text">Kabir Singh is a 2019 Indian Hindi-language romantic drama film written and directed by Sandeep Vanga. It is a remake of his own Telugu film Arjun Reddy (2017).</p>
+				<a href="#" class="btn btn-primary">Book</a>
+			</div>
+		</div>
+		<div class="card col-sm-12 col-md-6 col-lg-3 mr-auto" style="width: 18rem;">
+			<img src="Images/shada.jpg" class="card-img-top" alt="...">
+			<div class="card-body">
+				<h5 class="card-title">Shada</h5>
+				<p class="card-text">Amidst pressures from his parents to hurry up and wed, a young man seeks his perfect match.</p>
+				<a href="#" class="btn btn-primary">Book</a>
+			</div>
+		</div>
+		</div>
+		
+		<div class="row">
+			<div class="card col-sm-12 col-md-6 col-lg-3 mr-auto" style="width: 18rem;">
+			<img src="Images/jabariya.jpg" class="card-img-top" alt="...">
+			<div class="card-body">
+				<h5 class="card-title">Jabariya Jodi</h5>
+				<p class="card-text">Based on groom kidnappings in Bihar, where the groom is kidnapped to avoid dowry, the film has Siddharth Malhotra playing a thug who helps kidnap grooms. It also features Parineeti Chopra in a prominent role.</p>
+				<a href="#" class="btn btn-primary">Book</a>
+			</div>
+			</div>
+		<div class="card col-sm-12 col-md-6 col-lg-3 mr-auto" style="width: 18rem;">
+			<img src="Images/spidy.jpg" class="card-img-top" alt="...">
+			<div class="card-body">
+				<h5 class="card-title">Spider Man: Far From Home</h5>
+				<p class="card-text">Peter Parker's European vacation is halted when he agrees to help Nick Fury uncover the mystery of elemental creature attacks.</p>
+				<a href="#" class="btn btn-primary">Book</a>
+			</div>
+		</div>
+		<div class="card col-sm-12 col-md-6 col-lg-3 mr-auto" style="width: 18rem;">
+			<img src="Images/xmen.jpg" class="card-img-top" alt="...">
+			<div class="card-body">
+				<h5 class="card-title">X-MEN Dark Phoenix</h5>
+				<p class="card-text">X-Men: Dark Phoenix is a 2019 American superhero film based on the Marvel Comics X-Men characters, produced by 20th Century Fox and distributed by Walt Disney Studios Motion Pictures.</p>
+				<a href="#" class="btn btn-primary">Book</a>
+			</div>
+		</div>
+		</div>
+
+		<div class="row">
+			<div class="card col-sm-12 col-md-6 col-lg-3 mr-auto" style="width: 18rem;">
+			<img src="Images/aladin.jpg" class="card-img-top" alt="...">
+			<div class="card-body">
+				<h5 class="card-title">Aladdin</h5>
+				<p class="card-text">Aladdin is a 2019 American musical fantasy film directed by Guy Ritchie, who co-wrote the screenplay with John August. Produced by Walt Disney Pictures, it is a live action adaptation of Disney's 1992 animated film of the same name, which is based on the eponymous tale from One Thousand and One Nights.</p>
+				<a href="#" class="btn btn-primary">Book</a>
+			</div>
+			</div>
+		<div class="card col-sm-12 col-md-6 col-lg-3 mr-auto" style="width: 18rem;">
+			<img src="Images/toy.jpg" class="card-img-top" alt="...">
+			<div class="card-body">
+				<h5 class="card-title">Toy Story 4</h5>
+				<p class="card-text">Toy Story 4 is a 2019 American computer-animated comedy film produced by Pixar Animation Studios for Walt Disney Pictures. It is the fourth installment in Pixar's Toy Story series and the sequel to 2010's Toy Story 3.</p>
+				<a href="#" class="btn btn-primary">Book</a>
+			</div>
+		</div>
+		<div class="card col-sm-12 col-md-6 col-lg-3 mr-auto" style="width: 18rem;">
+			<img src="Images/gameover.jpg" class="card-img-top" alt="...">
+			<div class="card-body">
+				<h5 class="card-title">Game Over</h5>
+				<p class="card-text">Game Over is a 2019 Indian Tamil-Telugu bilingual thriller film written by Ashwin Saravanan and Kaavya Ramkumar and directed by Ashwin Saravanan.</p>
+				<a href="#" class="btn btn-primary">Book</a>
+			</div>
+		</div>
+		</div>
+
+	</section>
+		
+	<footer>
+		<p>&copy Copyright 2019</p>
+		<div>
+			<a href="#"><i class="fa fa-facebook fa-lg social-icons"></i></a>
+			<a href="#"><i class="fa fa-envelope fa-lg social-icons"></i></a>
+			<a href="#"><i class="fa fa-instagram fa-lg social-icons"></i></a>
+			<a href="#"><i class="fa fa-twitter fa-lg social-icons"></i></a>
+		</div>
+	</footer>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+    <script type="text/javascript" src="Scripts/main.js"></script>
+    </body>
+</html>
