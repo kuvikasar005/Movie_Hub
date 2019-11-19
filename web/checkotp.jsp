@@ -9,7 +9,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Reset Password</title>
         <%@page  import="java.sql.*" %>
     </head>
     <body>
@@ -22,6 +22,7 @@
                 %>
                     <form action="updatepassword.jsp">
                         New Password <input type="text" name="pass">
+                        <button type="submit">Change Password</button>
                     </form>
                 <%
             }
