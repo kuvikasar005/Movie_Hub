@@ -181,14 +181,14 @@
                      </table>
                      
                      <%
-                }
+                
                 
                    %>
                    
-                   <a class="btn btn-warning" href="login2.jsp">Proceed to Pay</a>
+                   <a class="btn btn-warning" href="book.jsp?showId=<%=showid%>&selectedSeats=<%=selectedSeats%>">Proceed to Pay</a>
                    
                    <%                         
-                    
+                }    
                 cn.close();
                 
             }

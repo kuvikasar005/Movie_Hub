@@ -70,12 +70,6 @@
 				<h3>Profile</h3>
 				</div>
 			</a>
-			<a href="#">
-				<div>
-					<img src="Images/ticket4.jpg" width="140" height="140">
-					<h3 class="collection" style="left: -2px; top: -15px;">View Bookings</h3>
-				</div>
-			</a>
 			<a href="viewmovie.jsp">
 				<div>
 					<img src="Images/movie3.webp" width="140" height="140">
@@ -94,7 +88,7 @@
 					<h3>Offers</h3>
 				</div>
 			</a>
-			<a href="#">
+			<a href="bookHistory.jsp">
 				<div>
 					<img src="Images/history2.png" width="120" height="120">
 					<h3>Booking History</h3>
@@ -102,8 +96,7 @@
 			</a>
 			<a href="#">
 				<div>
-					<img src="Images/support2.png" width="120" height="120">
-					<h3>Support</h3>
+					
 				</div>
 			</a>
 			<a href="#">
