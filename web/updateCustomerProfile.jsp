@@ -43,7 +43,7 @@
                     %>
                     <script>
                         alert('Profile Successfully Updated.');
-                      //  window.location.href="customerhome.jsp";
+                        window.location.href="customerhome.jsp";
                     </script>
                     <%
                 
